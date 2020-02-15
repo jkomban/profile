@@ -1,0 +1,72 @@
+* {
+    margin: 0px;
+    position: relative;
+    font-family: 'Roboto Mono', monospace!important;
+    font-size: larger;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.full-screen {
+    height: 100vh;
+    width: 100vw;
+}
+
+.dark-theme {
+    background-color: #303030;
+    color: azure;
+}
+
+.main-container {
+    top: 30%;
+    margin: 0em 1em;
+}
+
+.heading {
+    font-size: .9em;
+    margin: .25em 0em;
+}
+
+.public-profiles {
+    display: flex;
+    flex-direction: row;
+}
+
+div .profile:first-child {
+    padding: 0em 1em 0em 0em;
+    /* background-color: red; */
+}
+
+div .profile:not(:first-child) {
+    padding: 0em 1em
+}
+
+.profile {
+    font-size: .45em;
+    font-weight: 100;
+    color: rgb(39, 112, 230, .9);
+}
+
+.title {
+    font-size: 2em;
+}
+
+a.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+    font-size: inherit;
+}
+
+a.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+    font-size: inherit;
+}
+
+.light-theme {
+    background-color: azure;
+    color: black;
+}

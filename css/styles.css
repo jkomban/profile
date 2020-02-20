@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     position: relative;
-    font-family: 'Roboto Mono', monospace!important;
+    font-family: 'Roboto Mono', monospace;
 }
 
 body {
@@ -20,8 +20,24 @@ body {
 }
 
 .main-container {
-    top: 30%;
     margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.half-page {
+    height: 50vh;
+}
+
+.hand-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .heading {
@@ -68,6 +84,35 @@ a.nostyle:visited {
 .light-theme {
     background-color: azure;
     color: black;
+}
+
+.next-page {
+    font-size: 2em;
+    margin: 2em;
+    align-self: flex-end;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.about-me {
+    margin: auto;
+}
+
+.column-left {
+    width: 20vw;
+}
+
+.column-right {
+    width: 80vw;
 }
 
 @media all and (max-width: 520px) and (min-width:310px) {

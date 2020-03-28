@@ -1,7 +1,6 @@
 * {
     margin: 0px;
     position: relative;
-    font-family: 'Roboto Mono', monospace;
 }
 
 body {
@@ -24,6 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    font-family: 'Roboto Monospace', monospace;
 }
 
 .half-page {
@@ -95,6 +95,8 @@ a.nostyle:visited {
 .section {
     display: flex;
     flex-direction: column;
+    font-family: monospace;
+    color: #4a4a4a;
 }
 
 .columns {
@@ -104,18 +106,69 @@ a.nostyle:visited {
 }
 
 .about-me {
-    margin: auto;
+    margin: 20px 20px;
 }
 
 .column-left {
     width: 20vw;
+    font-size: 2em;
+    margin-left: 3em;
+    display: flex;
 }
 
 .column-right {
     width: 80vw;
+    margin-right: 5em;
+    display: flex;
+    flex-direction: column;
 }
 
-@media all and (max-width: 520px) and (min-width:310px) {
+.para {
+    text-align: justify;
+    margin: 0px 25px;
+    font-size: 1.5em;
+}
+
+.para p:first-child::first-letter {
+    font-size: 2em;
+}
+
+.sub-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-section p {
+    display: block;
+    margin-left: 25px;
+    font-weight: 300;
+    font-family: monospace;
+    font-size: 1.25em;
+}
+
+.sub-section span {
+    /* Like a chip*/
+    margin-left: 25px;
+    background-color: #e0e0e0;
+    color: rgba(0, 0, 0, .87);
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    background-color: yellow;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
+/* Tab */
+
+@media all and (max-width: 1300px) and (min-width: 521px) {
     .title {
         font-size: 1.7em;
     }
@@ -126,6 +179,63 @@ a.nostyle:visited {
         font-size: .75em;
         font-weight: 100;
         color: rgb(39, 112, 230, .9);
+    }
+    li {
+        float: left;
+        background-color: green;
+        margin: 10px 10px;
+        padding: 5px 5px;
+        border-radius: 10px;
+    }
+    .columns {
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+    }
+    .column-left {
+        font-size: 2em;
+        margin-left: 5px;
+        display: flex;
+    }
+    .column-right {
+        margin-right: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* iPhone , Tab */
+
+@media all and (max-width: 520px) and (min-width: 310px) {
+    .title {
+        font-size: 1.7em;
+    }
+    .heading {
+        font-size: .75em;
+    }
+    .profile {
+        font-size: .75em;
+        font-weight: 100;
+        color: rgb(39, 112, 230, .9);
+    }
+    li {
+        float: left;
+        background-color: red;
+        margin: 10px 10px;
+        padding: 5px 5px;
+        border-radius: 10px;
+    }
+    .column-left {
+        width: inherit;
+        font-size: 1.2em;
+        margin-left: 5px;
+        display: flex;
+    }
+    .column-right {
+        width: inherit;
+        margin-right: 5px;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -140,5 +250,17 @@ a.nostyle:visited {
         font-size: .75em;
         font-weight: 100;
         color: rgb(39, 112, 230, .9);
+    }
+    .columns {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    li {
+        float: left;
+        background-color: blue;
+        margin: 10px 10px;
+        padding: 5px 5px;
+        border-radius: 10px;
     }
 }

@@ -88,7 +88,7 @@ a.nostyle:visited {
 
 .next-page {
     font-size: 2em;
-    margin: 2em;
+    margin: 0em 3em 4em 0em;
     align-self: flex-end;
 }
 
@@ -160,7 +160,7 @@ ul {
 
 li {
     float: left;
-    background-color: yellow;
+    background-color: #e0e0e0;
     margin: 10px 10px;
     padding: 5px 5px;
     border-radius: 10px;
@@ -182,10 +182,13 @@ li {
     }
     li {
         float: left;
-        background-color: green;
+        background-color: #e0e0e0;
         margin: 10px 10px;
         padding: 5px 5px;
         border-radius: 10px;
+    }
+    .sub-section p {
+        font-size: 1.5em;
     }
     .columns {
         display: flex;
@@ -193,7 +196,7 @@ li {
         margin: 0px;
     }
     .column-left {
-        font-size: 2em;
+        font-size: 1.7em;
         margin-left: 5px;
         display: flex;
     }
@@ -222,26 +225,31 @@ li {
     }
     li {
         float: left;
-        background-color: red;
+        background-color: #e0e0e0;
         margin: 10px 10px;
         padding: 5px 5px;
         border-radius: 10px;
     }
     .column-left {
-        width: inherit;
-        font-size: 1.2em;
+        width: auto;
+        font-size: 1em;
         margin-left: 5px;
-        display: flex;
+    }
+    .about-me {
+        width: 6em;
+        margin: 0px 0px;
+        display: inline-block;
+        white-space: nowrap;
     }
     .column-right {
-        width: inherit;
+        width: auto;
         margin-right: 5px;
         display: flex;
         flex-direction: column;
     }
 }
 
-@media all and (max-width: 309px) and (min-width:100px) {
+@media all and (max-width: 309px) and (min-width: 100px) {
     .title {
         font-size: 1em;
     }
@@ -260,7 +268,7 @@ li {
     }
     li {
         float: left;
-        background-color: blue;
+        background-color: #e0e0e0;
         margin: 10px 10px;
         padding: 5px 5px;
         border-radius: 10px;
